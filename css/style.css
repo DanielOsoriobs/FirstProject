@@ -1,0 +1,166 @@
+body{
+    font-size: 16px;
+    font-family: 'Poppins', serif;
+    background: purple;
+    position: relative;
+
+}
+header{
+  margin-top: 40px;
+  background: blue;
+  border: 3px solid #fafafa10;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+header .calendar
+{
+  display: none;
+}
+header .headerefect{
+  background: #fafafa10;
+  backdrop-filter: blur(0.4rem);
+}
+h1, h2{
+  display: none;
+}
+.logo-container{
+  display: none;
+}
+header nav .ioMenuMovil{
+  height: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 5px;
+  background: gray;
+}
+header nav .ioMenuMovil figure{
+  margin: 0;
+
+}
+header nav .ioMenuMovil figure img{
+  height: 100%;
+}
+header nav .card_menu {
+  position: absolute;
+  width: 230px;
+  height: 450px;
+  background: white;
+  top: 0;
+  left: -4px;
+  border-right: 3px solid #efb810;
+  z-index: 999;
+  padding-bottom: 50px;
+  flex-direction: column;
+  border-radius: 12px;
+}
+header nav .card_menu .logoMenu {
+  height: 250px;
+  width: 80%;
+  margin: 30px 0px;
+  margin-left: 10%;
+  margin-bottom: -40px;
+}
+header nav .card_menu .logoMenu img {
+  width: 170%;
+  margin-top: -40px;
+  margin-left: -70px;
+}
+
+header nav .card_menu ul li {
+  list-style: none;
+  font-size: 1.4em;
+  line-height: 45px;
+}
+header nav .card_menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .prev-container,
+header .next-container{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+header .prev-container{
+  right: 40px;
+}
+header .next-container{
+  right: 5px;
+}
+header .prev-container img,
+header .next-container img{
+  width: 100%;
+}
+
+
+@media screen and (min-width: 480px){
+  body{
+    background: red;
+  }
+}
+@media screen and (min-width: 600px){
+  body{
+    background: orange;
+  }
+}
+@media screen and (min-width: 767px){
+  body{
+    background: yellow;
+  }
+  header{
+    height: 50px;
+  }
+  header div.logo-container {
+    display: flex;
+    width: 25%;
+    height: 55px;
+    margin-left: 80px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+  }
+  header div.logo-container figure {
+    margin: 0;
+    width: 250px;
+  }
+  header div.logo-container figure img{
+    width: 100%;
+  }
+	header nav {
+    width: 62%;
+    height: 50px;
+    background: green;
+  }
+  
+  header .prev-container,
+  header .next-container{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: red;
+    right: 40px;
+    z-index: 999;
+  }
+  header .prev-container{
+    top: 115px;
+  }
+  header .next-container{
+    top: 195px;
+  }
+}
+@media screen and (min-width: 950px){
+  body{
+    background: green;
+  }
+}
+

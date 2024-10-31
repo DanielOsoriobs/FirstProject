@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width
+    , initial-scale=1.0">
+	<title>Centro Estetico Maria Camila Baron</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<header>
+		<div class="headerefect">
+
+		</div>
+		<div class="logo-container">
+			<a href="index.html">
+				<figure>
+					<img src="img/logo.png" alt="Logo Centro Estético" />
+				</figure>
+			</a>
+		</div>
+		<nav class="menu">
+			
+			<div class="ioMenuMovil">
+				<figure id="showMenu" onclick="displayMenu()">
+					<img src="icons/GgMenu.svg" alt="Abrir menú" />
+				</figure>
+			</div>
+
+			<div class="card_menu">
+				
+				<div class="ioMenuMovil">
+					<figure id="hideMenu" onclick="displayMenu()">
+						<img src="icons/LineMdMenuToCloseTransition.svg" alt="Abrir menú" />
+					</figure>
+				</div>
+
+				<figure class="logoMenu">
+					<img src="img/logo.png" alt="Logo Centro Estético" />
+				</figure>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutme.html">Sobre mí</a></li>
+					<li><a href="treatments.html">Tratamientos</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+				</ul>
+			</div>
+
+			<div class="calendar">
+				<a href="https://centrodeesteticademariacamilabaron.site.agendapro.com/co/sucursal/244555" target="_blank"
+					rel="Link Maria Camila Estetica Agenda pro">
+					<figure>
+						<img src="icons/IconParkOutlineCalendar.svg" alt="calendario">
+					</figure>
+				</a>
+			</div>
+		</nav>
+
+		<div class="prev-container">
+			<a href="contact.html">
+				<img src="icons/OouiPreviousLtr.svg" alt="Previous Button">
+			</a>
+		</div>
+
+		<div class="next-container">
+			<a href="aboutme.html">
+				<img src="icons/OouiPreviousRtl.svg" alt="Next Button">
+			</a>
+		</div>
+	</header>
+
+	<div id="title">
+		<h1> 
+			<a href="index.html">Centro Estetico Maria Camila Baron</a>
+		</h1>
+		<h2>Home</h2>
+	</div>
+
+	<script>
+		function displayMenu() {
+			var display
+			var card_menu = document.getElementById('card_menu')
+			display = card_menu.style.display
+
+			if (display == 'none') {
+				card_menu.style.display = 'flex' // se cambio a flex
+			} else {
+				card_menu.style.display = 'none'
+			}
+		}
+	</script>
+</body>
+
+</html>
